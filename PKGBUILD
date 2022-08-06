@@ -12,6 +12,7 @@ sha256sums=('SKIP')
 
 package() {
     cd ${pkgname}
+    install -d "${pkgdir}/usr/share/icons/$pkgname"
     cp -r src/$pkgname/* "${pkgdir}/usr/share/icons/"
 
 }
